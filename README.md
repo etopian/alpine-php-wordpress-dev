@@ -1,6 +1,8 @@
-# Intro
+# WordPress Development Docker Container
 
-This is a development Docker container for WordPres using Alpine Linux that includes Ruby, Node, and Python.
+For the production container look here: https://github.com/etopian/alpine-php-wordpress
+
+This is a development Docker container for WordPress using Alpine Linux that includes Ruby, Node, and Python.
 Its main purpose is to help you develop your site with frameworks like Bedrock and Sage (https://roots.io/). Frameworks that
 require a full set of tooling to compile the frontend.
 
