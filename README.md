@@ -1,13 +1,14 @@
 # Intro
 
-This is a development image that includes Ruby, Node, and Python.
+This is a development Docker container for WordPres using Alpine Linux that includes Ruby, Node, and Python.
+Its main purpose is to help you develop your site with frameworks like Bedrock and Sage (https://roots.io/). Frameworks that
+require a full set of tooling to compile the frontend.
 
 * NodeJS 6.x 
 * Ruby 2.4
 * NPM 3.x
 * Gem
 * Python 2.7
-
 * Grunt
 * Gulp
 * Yeoman
