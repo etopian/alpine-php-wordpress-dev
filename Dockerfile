@@ -96,11 +96,13 @@ RUN echo 'http://dl-4.alpinelinux.org/alpine/edge/testing' >> /etc/apk/repositor
     ruby-libs \
     ruby-rdoc \
     sqlite-libs \
+    sqlite-dev \
     yaml \
     zlib-dev && \
     npm install -g bower && \
     npm install -g gulp-cli && \
     gem install sass && \
+    gem install mailcatcher && \
     npm install -g less && \
     npm install -g grunt-cli && \
     npm install -g yo && \
@@ -127,7 +129,7 @@ RUN chmod +x /run.sh
 
 RUN curl -O https://raw.githubusercontent.com/wp-cli/builds/gh-pages/phar/wp-cli.phar && chmod +x wp-cli.phar && mv wp-cli.phar /usr/bin/wp-cli && chown nginx:nginx /usr/bin/wp-cli
 
-EXPOSE 80
+EXPOSE 80 1080
 VOLUME ["/DATA"]
 
 CMD ["/run.sh"]
