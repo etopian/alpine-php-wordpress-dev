@@ -29,6 +29,6 @@ if [ ! -d /DATA/bin ] ; then
 fi
 
 
-
+mailcatcher --http-ip 0.0.0.0
 php-fpm7
 nginx
